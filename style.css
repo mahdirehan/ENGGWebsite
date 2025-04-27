@@ -129,26 +129,26 @@ img {
 }
 
 .navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
-}
+        justify-content: space-between;
+        padding: 0 20px;
+    }
 
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color);
-    margin-left: 20px;
+    text-align: center;
+    margin-left: 0;
 }
 
 .nav-links {
     display: flex;
     gap: 30px;
+    justify-content: center;
 }
 
 .nav-links a:first-child {
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 .nav-links a {
