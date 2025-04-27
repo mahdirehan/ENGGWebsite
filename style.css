@@ -132,12 +132,14 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 40px;
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color);
+    margin-left: 20px;
 }
 
 .nav-links {
@@ -950,6 +952,14 @@ img {
     
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .navbar .container {
+        padding: 0 20px;
+    }
+    
+    .logo {
+        margin-left: 10px;
     }
 }
 
