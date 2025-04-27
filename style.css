@@ -59,21 +59,23 @@ img {
 
 .section-title {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     font-size: 2.5rem;
     color: var(--primary-color);
     position: relative;
+    padding-bottom: 20px;
 }
 
 .section-title::after {
     content: '';
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 80px;
     height: 3px;
     background-color: var(--secondary-color);
+    border-radius: 2px;
 }
 
 .btn {
