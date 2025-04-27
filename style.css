@@ -409,7 +409,7 @@ img {
 /* Experience Section */
 .timeline {
     position: relative;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 40px 0;
 }
@@ -449,7 +449,7 @@ img {
     padding: 30px;
     border-radius: 12px;
     box-shadow: var(--box-shadow);
-    width: calc(50% - 50px);
+    width: calc(80% - 50px);
     margin-left: auto;
     position: relative;
     transition: transform 0.3s ease;
@@ -878,12 +878,12 @@ img {
     }
     
     .timeline-content {
-        width: calc(100% - 90px);
-        margin-left: 90px;
+        width: calc(100% - 60px);
+        margin-left: 60px;
     }
     
     .timeline-item:nth-child(even) .timeline-content {
-        margin-left: 90px;
+        margin-left: 60px;
         margin-right: 0;
     }
     
@@ -972,6 +972,8 @@ img {
     }
     
     .timeline-content {
+        width: calc(100% - 40px);
+        margin-left: 40px;
         padding: 20px;
     }
     
