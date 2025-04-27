@@ -185,4 +185,89 @@ document.addEventListener('DOMContentLoaded', function() {
         // Start typing effect after a short delay
         setTimeout(typeWriter, 1000);
     }
+    
+    // Project Details Modal
+    const modal = document.getElementById('project-modal');
+    const modalContent = document.getElementById('modal-content-container');
+    const closeModal = document.querySelector('.close-modal');
+    const viewDetailsButtons = document.querySelectorAll('.view-details-btn');
+    
+    // Project details data
+    const projectDetails = {
+        'hand-gripper': {
+            title: 'Hand Gripper 3D Modelling',
+            description: `
+                <p>This project focused on designing and developing a robotic hand gripper with advanced mechanical capabilities. The design process involved careful consideration of load distribution, actuator integration, and overall mechanical efficiency.</p>
+                
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>Precision-engineered finger joints for smooth movement</li>
+                    <li>Optimized load distribution across all components</li>
+                    <li>Integrated actuator system for precise control</li>
+                    <li>Ergonomic design for comfortable operation</li>
+                    <li>Modular construction for easy maintenance</li>
+                </ul>
+                
+                <h3>Technical Specifications:</h3>
+                <ul>
+                    <li>Maximum grip force: 50N</li>
+                    <li>Finger travel range: 0-90 degrees</li>
+                    <li>Response time: < 100ms</li>
+                    <li>Material: Aluminum alloy for durability</li>
+                </ul>
+                
+                <h3>Design Process:</h3>
+                <p>The project followed a systematic approach to design and development:</p>
+                <ol>
+                    <li>Initial concept development and requirements analysis</li>
+                    <li>3D modeling and simulation in SolidWorks</li>
+                    <li>Finite Element Analysis (FEA) for stress testing</li>
+                    <li>Prototype development and testing</li>
+                    <li>Design refinement based on test results</li>
+                </ol>
+            `
+        }
+    };
+    
+    // Open modal with project details
+    viewDetailsButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const projectId = this.getAttribute('data-project');
+            const project = projectDetails[projectId];
+            
+            if (project) {
+                modalContent.innerHTML = `
+                    <div class="project-details">
+                        <h2>${project.title}</h2>
+                        ${project.description}
+                    </div>
+                `;
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+            }
+        });
+    });
+    
+    // Close modal when clicking the close button
+    closeModal.addEventListener('click', function() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Re-enable scrolling
+    });
+    
+    // Close modal when clicking outside the content
+    window.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.style.display === 'block') {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
 });
