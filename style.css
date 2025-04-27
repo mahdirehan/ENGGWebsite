@@ -139,12 +139,16 @@ img {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color);
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .nav-links {
     display: flex;
     gap: 30px;
+}
+
+.nav-links a:first-child {
+    margin-left: 10px;
 }
 
 .nav-links a {
