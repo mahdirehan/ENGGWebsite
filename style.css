@@ -303,37 +303,37 @@ img {
 
 .education-item {
     background-color: var(--light-bg);
-    padding: 30px;
+    padding: 25px;
     border-radius: 8px;
     box-shadow: var(--box-shadow);
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .education-item h3 {
     color: var(--primary-color);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .institution {
     font-weight: 500;
     color: var(--secondary-color);
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 .date, .gpa {
     color: var(--light-text);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .courses, .awards {
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-bottom: 15px;
 }
 
 .courses li, .awards li {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     position: relative;
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .courses li::before, .awards li::before {
