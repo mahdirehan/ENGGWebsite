@@ -59,7 +59,7 @@ img {
 
 .section-title {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     font-size: 2.5rem;
     color: var(--primary-color);
     position: relative;
@@ -139,7 +139,7 @@ img {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color);
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .nav-links {
@@ -230,14 +230,14 @@ img {
 
 .intro h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     color: var(--primary-color);
 }
 
 .intro h2 {
     font-size: 1.5rem;
     color: var(--secondary-color);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .tagline {
@@ -508,14 +508,14 @@ img {
 .experience-details h3 {
     color: var(--primary-color);
     font-size: 1.3rem;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .company {
     font-size: 1.1rem;
     font-weight: 500;
     color: var(--secondary-color);
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .date {
@@ -568,7 +568,7 @@ img {
 
 .skills-category h3 {
     color: var(--primary-color);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
@@ -672,7 +672,7 @@ img {
 
 .publication-item h3 {
     color: var(--primary-color);
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     font-size: 1.4rem;
 }
 
