@@ -273,7 +273,7 @@ img {
     padding: 30px;
     border-radius: 8px;
     box-shadow: var(--box-shadow);
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
     width: 100%;
 }
