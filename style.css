@@ -256,6 +256,8 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .bio {
@@ -271,6 +273,9 @@ img {
     padding: 30px;
     border-radius: 8px;
     box-shadow: var(--box-shadow);
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .academic-info h3, .interests h3 {
