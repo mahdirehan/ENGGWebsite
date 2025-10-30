@@ -21,7 +21,7 @@
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
-            <!-- <a href="#publications">Reports</a> -->
+            <a href="#publications">Reports</a>
             <a href="#contact">Contact</a>
         </div>
         <div class="hamburger">
@@ -44,12 +44,7 @@
                     <p class="tagline">Aspiring Engineer passionate about innovation and problem-solving</p>
                     <div class="cta-buttons">
                         <a href="#contact" class="btn primary-btn">Contact Me</a>
-                        <a href="documents/Resume.pdf" 
-                           class="btn primary-btn" 
-                           download="Resume.pdf"
-                           target="_blank">
-                            <i class="fas fa-file-pdf"></i> Download Resume PDF
-                        </a>
+                        <a href="resume.pdf" class="btn secondary-btn" download>Download Resume</a>
                     </div>
                 </div>
             </div>
@@ -71,7 +66,7 @@
                         <li><strong>Degree:</strong> Bachelor of Engineering in Engineering Systems and Computing</li>
                         <li><strong>University:</strong> University of Guelph</li>
                         <li><strong>Expected Graduation:</strong> Fall 2026</li>
-                        <li><strong>Average:</strong> 70%</li>
+                        <li><strong>Average:</strong> 76%</li>
                     </ul>
                 </div>
                 <div class="interests">
@@ -96,7 +91,7 @@
                     <h3>Bachelor of Engineering in Engineering Systems and Computing</h3>
                     <p class="institution">University of Guelph</p>
                     <p class="date">2022 - 2026</p>
-                    <p class="gpa">Average: 70%</p>
+                    <p class="gpa">Average: 76%</p>
                     
                     <h4>Key Courses</h4>
                     <ul class="courses">
@@ -152,22 +147,11 @@
                             <span class="tech-tag">3D SolidWorks</span>
                         </div>
                         <div class="project-links">
-                            <!-- <a href="#" class="btn small-btn">View Details</a> -->
                             <a href="#" class="btn small-btn view-details-btn" data-project="hand-gripper">View Details</a>
                             <a href="#" class="btn small-btn">GitHub</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Project Details Modal -->
-    <div id="project-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <div id="modal-content-container">
-                <!-- Content will be loaded dynamically -->
-            </div>
-        </div>
-    </div>
 
                   <!-- Project 3 -->
                 <div class="project-card">
@@ -236,15 +220,15 @@
                                 <img src="images/ecil-logo.jpg" alt="Engineering Consultants International Limited Logo">
                             </div>
                             <div class="company-info">
-                                <h3>GIS Analyst</h3>
+                                <h3>AI Developer</h3>
                                 <p class="company">Engineering Consultants International Limited</p>
                                 <p class="date">May 2025 - September 2025</p>
                             </div>
                         </div>
                         <ul class="responsibilities">
-                            <li>Integrated LiDAR and point cloud data for 3D modeling and asset inventories.</li>
-                            <li>Supported asset management by linking GIS data to maintenance and inspection records.</li>
-                            <li>Collected and processed GPS field data, integrating survey data into GIS systems.</li>
+                            <li>Developed an end-to-end AI-based pavement inspection system integrating deep learning (YOLOv8), computer vision, and OCR to automatically detect, classify, and measure pavement distresses by type and severity. By achieving 84% detection accuracy (mAP50 = 0.815) across 17 distress classes and three severity levels, we were able to significantly reducing manual inspection workload to only QA/QC checking.</li>
+                            <li>Implemented calibration processes to transform image detections into real-world measurements (length, area, count), enabling precise quantification of pavement defects for asset management.</li>
+                            <li>Automated Pavement Condition Index (PCI) evaluation under ASTM D6433, reducing manual data entry and generated automated GIS-ready interactive maps and KML files for improved visualization and decision-making.</li>
                         </ul>
                     </div>
                 </div>
@@ -263,8 +247,8 @@
                             </div>
                         </div>
                         <ul class="responsibilities">
-                            <li>developed the VIA NOVA mobile application designed to perform automated road surveys, integrating accelerometers, GPS, and cameras for real-time video, photo, and metadata collection to analyze road condition data.</li>
-                            <li>Automated the Pavement Condition Index (PCI) and International Roughness Index (IRI) by processing accelerometer and GPS data, enhancing data accuracy and operational efficiency.</li>
+                            <li>developed Java-based Android mobile application designed to perform automated road surveys, integrating accelerometers, GPS, and cameras for real-time video, photo, and metadata collection to analyze road condition data.</li>
+                            <li>Automated the International Roughness Index (IRI) by processing accelerometer and GPS data, providing a low-cost, portable solution.</li>
                             <li>Enhanced system functionality by integrating cloud storage, enabling captured survey data to be automatically uploaded for processing through a web application, where it is analyzed to generate pavement maintenance and repair reports.</li>
                         </ul>
                     </div>
@@ -318,7 +302,6 @@
                             <ul>
                                 <li>AutoCAD</li>
                                 <li>SolidWorks</li>
-                                <li>ArcGIS</li>
                                 <li>Microsoft Office Suite</li>
                             </ul>
                         </div>
@@ -440,15 +423,16 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <p>syedmahd@uoguelph.ca</p>
+                        <p>email@example.com</p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p>Ontario, Canada</p>
+                        <p>City, Country</p>
                     </div>
                     <div class="social-links">
                         <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 
@@ -506,6 +490,16 @@
             </div>
         </div>
     </footer>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-content-container">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
